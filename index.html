@@ -84,26 +84,25 @@
     .summary {
       display: flex;
       flex-direction: column;
-      /* align-items: center; */
       width: 250px;
     }
 
     .summary-title {
       margin-left: 20px;
-      /* text-align: left; */
       color: hsl(224, 30%, 27%)
     }
 
     .summary-box {
       display: inline-flex;
-      /* justify-content: space-around; */
       align-items: center;
 
       border-radius: 5px;
       margin: auto;
       padding-left: 10px;
+      padding-right: 10px;
+
       width: 200px;
-      height: 38px;
+      height: 40px;
     }
 
     .summary-box-text {
@@ -113,7 +112,7 @@
     }
 
     .summary-box-number {
-      /* margin-left: 40px; */
+      margin-right: 10px;
     }
 
     .red {
@@ -153,6 +152,36 @@
 
     .attribution a {
       color: hsl(228, 45%, 44%);
+    }
+
+    @media screen and (max-width: 480px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+      }
+
+      .reslut {
+        width: 100%;
+      }
+
+      .summary {
+        width: 100%;
+        gap: 10px;
+      }
+
+      .summary-box {
+        width: 80%;
+      }
+
+      .summary-box-text {
+        margin-right: 60px;
+      }
+
+      .continue-button {
+        width: 80%;
+      }
+
     }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
